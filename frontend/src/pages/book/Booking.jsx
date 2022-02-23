@@ -16,6 +16,7 @@ const Booking = () => {
   const date = useRef();
   const postcode = useRef();
   const guests = useRef();
+  const duration = useRef();
 
   const [ sent, setSent ] = useState(false)
 
@@ -32,6 +33,7 @@ const Booking = () => {
       postcode: postcode.current.value,
       date: date.current.value,
       guests: guests.current.value,
+      duration: duration.current.value,
     };
 
 		try {
@@ -99,6 +101,12 @@ const Booking = () => {
             placeholder="Number of Guests"
             required
             ref={guests}
+            type="number"
+          />
+           <input
+            placeholder="Duration in hours"
+            required
+            ref={duration}
             type="number"
           />
           <textarea

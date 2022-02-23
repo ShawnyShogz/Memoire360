@@ -1,9 +1,6 @@
 import bg from '../assets/bg.png';
-import chef from '../assets/chef.png';
-import G from '../assets/G.png';
 import knife from '../assets/knife.png';
 import logo from '../assets/logo.png';
-import menu from '../assets/menu.png';
 import overlaybg from '../assets/overlaybg.png';
 import spoon from '../assets/spoon.svg';
 import hautedolci from '../assets/HauteDolciTestimonial.mp4';
@@ -25,13 +22,7 @@ import vid14 from '../assets/vid14.mp4'
 import vid15 from '../assets/vid15.mp4'
 import vid16 from '../assets/vid16.mp4'
 import vid17 from '../assets/vid17.mp4'
-
-// import welcome from '../assets/360PhotoboothIpad.png';
 import welcome from '../assets/IMG_4314.JPG';
-import findus from '../assets/findus.png';
-import laurels from '../assets/laurels.png';
-import sign from '../assets/sign.png';
-import quote from '../assets/quote.png';
 import memoire360 from '../assets/memoire360.png';
 import slide1 from '../assets/slide_1.png';
 import slide2 from '../assets/slide_2.png';
@@ -48,17 +39,11 @@ import img6 from '../assets/IMG_5014.JPG';
 
 export default {
   bg,
-  G,
   knife,
   logo,
-  menu,
   overlaybg,
   spoon,
   welcome,
-  findus,
-  laurels,
-  sign,
-  quote,
   memoire360,
   slide1,
   slide2,

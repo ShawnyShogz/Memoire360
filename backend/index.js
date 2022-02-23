@@ -18,7 +18,10 @@ app.post("/send_mail", cors(), async (req, res) => {
         phone : req.body.phone,
         message : req.body.message,
         location : req.body.location,
-        date: req.body.date
+        date: req.body.date,
+        guests: req.body.guests,
+        duration: req.body.duration,
+        postcode: req.body.postcode
     }
 	const transport = nodemailer.createTransport({
 		host: process.env.MAIL_HOST,
@@ -44,17 +47,17 @@ app.post("/send_mail", cors(), async (req, res) => {
         <h2>From ${data.name}</h2>
         <br>
         <p>On the ${data.date}</p>
-        <p>At ${data.location}</p>
+        <p>At ${data.location}, ${data.postcode}</p>
+        <p>They will need the booth for around ${data.duration} hours and will have around ${data.guests} guests.</p>
+        <h3>Description</h3>
         <p>${data.message}</p>
         <br>
         <p>Give them a call on ${data.phone} or email ${data.email}</p>
-    
- 
          </div>
     `
 	})
 })
 
-app.listen(process.env.PORT || 4000, () => {
-    console.log('Server is listening on port 4000');
+app.listen(process.env.PORT || 8080, () => {
+    console.log('Server is listening on port 8080');
 });
