@@ -13,8 +13,7 @@ const PhotoGallery = () => {
     const handleClick = (item, index) => {
         setCurrentIndex(index);
         {item.imgSrc ? setClickedImg(item.imgSrc): setClickedImg(item.vidSrc);}
-        setImageOrVideo();
-        
+        setImageOrVideo();      
       };
       
 
@@ -115,7 +114,67 @@ const PhotoGallery = () => {
         {
           id: 24,
           vidSrc:images.vid17,
+        }, 
+        {
+          id: 25,
+          vidSrc:images.vid18,
         },  
+        {
+          id: 26,
+          vidSrc:images.vid19,
+        }, 
+        {
+          id: 27,
+          vidSrc:images.vid20,
+        }, 
+        {
+          id: 28,
+          vidSrc:images.vid21,
+        }, 
+        {
+          id: 29,
+          vidSrc:images.vid22,
+        }, 
+        {
+          id: 30,
+          vidSrc:images.vid23,
+        }, 
+        {
+          id: 31,
+          vidSrc:images.vid24,
+        }, 
+        {
+          id: 32,
+          vidSrc:images.vid25,
+        }, 
+        {
+          id: 33,
+          vidSrc:images.vid26,
+        }, 
+        {
+          id: 34,
+          vidSrc:images.vid27,
+        }, 
+        {
+          id: 35,
+          vidSrc:images.vid28,
+        }, 
+        {
+          id: 36,
+          vidSrc:images.vid29,
+        }, 
+        {
+          id: 37,
+          vidSrc:images.vid30,
+        }, 
+        {
+          id: 38,
+          vidSrc:images.vid31,
+        }, 
+        {
+          id: 39,
+          vidSrc:images.vid32,
+        }, 
       
         
     ]
@@ -161,7 +220,8 @@ const handelRotationRight = () => {
   return (
       <>
        <Navbar />
-      <div className="app__header">
+       <div className="app__bg ">
+     
         <div className="gallery">
       {data.map((item, index) => (
         <div key={index} className="media">

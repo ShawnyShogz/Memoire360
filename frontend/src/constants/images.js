@@ -22,6 +22,21 @@ import vid14 from '../assets/vid14.mp4'
 import vid15 from '../assets/vid15.mp4'
 import vid16 from '../assets/vid16.mp4'
 import vid17 from '../assets/vid17.mp4'
+import vid18 from '../assets/vid18.mp4'
+import vid19 from '../assets/vid19.mp4'
+import vid20 from '../assets/vid20.mp4'
+import vid21 from '../assets/vid21.mp4'
+import vid22 from '../assets/vid22.mp4'
+import vid23 from '../assets/vid23.mp4'
+import vid24 from '../assets/vid24.mp4'
+import vid25 from '../assets/vid25.mp4'
+import vid26 from '../assets/vid26.mp4'
+import vid27 from '../assets/vid27.mp4'
+import vid28 from '../assets/vid28.mp4'
+import vid29 from '../assets/vid29.mp4'
+import vid30 from '../assets/vid30.mp4'
+import vid31 from '../assets/vid31.mp4'
+import vid32 from '../assets/vid32.mp4'
 import welcome from '../assets/IMG_4314.JPG';
 import memoire360 from '../assets/memoire360.png';
 import slide1 from '../assets/slide_1.png';
@@ -74,4 +89,19 @@ export default {
   vid15,
   vid16,
   vid17,
+  vid18,
+  vid19,
+  vid20,
+  vid21,
+  vid22,
+  vid23,
+  vid24,
+  vid25,
+  vid26,
+  vid27,
+  vid28,
+  vid29,
+  vid30,
+  vid31,
+  vid32,
 };

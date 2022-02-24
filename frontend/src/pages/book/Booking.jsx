@@ -37,7 +37,7 @@ const Booking = () => {
     };
 
 		try {
-			await axios.post("http://localhost:4000/send_mail", data)
+			await axios.post("/send_mail", data)
 		} catch (error) {
 			console.error(error)
 		}
