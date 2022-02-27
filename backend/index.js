@@ -18,23 +18,24 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-    origin:"http://memoire360.com",
+    // origin:"http://memoire360.com",
+    origin:"http://localhost:8080",
     methods:"GET,PUT,POST,DELETE",
     credentials: true
   }))
 
-// app.use(cors());
+ app.use(cors());
 
-// app.use('/*', (req,res) => {
-//     //res.sendFile(path.join(__dirname, '../../frontend/build', '/index.html'));
-//     const index = path.join(__dirname, '../../360photobooth/frontend/build', 'index.html');
-//   res.sendFile(index);
-//   })
+app.use('/*', (req,res) => {
+    //res.sendFile(path.join(__dirname, '../../frontend/build', '/index.html'));
+    const index = path.join(__dirname, '../../360photobooth/frontend/build', 'index.html');
+  res.sendFile(index);
+  })
 
-// app.use(bodyParser.urlencoded({ extended: true }))
-// app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())
 
-app.use(cors())
+
 
 app.post("/send_mail",  async (req, res) => {
 	const data = {
