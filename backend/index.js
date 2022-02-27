@@ -18,8 +18,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-    // origin:"http://memoire360.com",
-    origin:"http://localhost:8080",
+    origin:"http://www.memoire360.com",
+    //origin:"http://localhost:8080",
+    //origin:"http://18.134.154.184:8080",
     methods:"GET,PUT,POST,DELETE",
     credentials: true
   }))
