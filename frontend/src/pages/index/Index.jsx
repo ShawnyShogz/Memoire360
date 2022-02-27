@@ -6,27 +6,14 @@ export default function Index() {
     return (
         <>
          <div>
-    <Navbar />
-    {/* Testing the modal  */}
-    {/* <Container>
-        <Button onClick={openModal}>I'm a modal</Button>
-        <Modal showModal={showModal} setShowModal={setShowModal} />
-        
-      </Container> */}
-       <Intro />
-    <Testimonials />
-
-    <Header />
-    
-    <AboutUs />
-    
-   
-    
-    <Gallery />
-    {/*<FindUs />*/}
-    <Footer /> 
-    {/* Mailchimp API KEY: ec54489dd783fb368c2e1745103730f8-us14 */}
-  </div>
+            <Navbar />
+            <Intro />
+            <Testimonials />
+            <Header />
+            <AboutUs />
+            <Gallery />
+            <Footer /> 
+        </div>
         </>
     )
 }
