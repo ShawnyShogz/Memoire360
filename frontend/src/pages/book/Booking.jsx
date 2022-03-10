@@ -91,6 +91,7 @@ const Booking = () => {
             type="text"
           />
           <input 
+            placeholder="dd/mm/yyyy"
             type="date" 
             required={true}
             ref={date}
