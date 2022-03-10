@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.9ca45594.css",
+    "main.css": "/static/css/main.2b03a8ea.css",
     "main.js": "/static/js/main.6ec45726.js",
     "static/media/HauteDolciTestimonial.mp4": "/static/media/HauteDolciTestimonial.a21cb6e234a2d718d1dc.mp4",
     "static/media/bg.png": "/static/media/bg.3d421b1b5682e1b67deb.png",
@@ -19,11 +19,11 @@
     "static/media/logo.png": "/static/media/logo.0286194c03de0a90dac9.png",
     "static/media/spoon.svg": "/static/media/spoon.d079f43fbcf509908d3865293080795a.svg",
     "index.html": "/index.html",
-    "main.9ca45594.css.map": "/static/css/main.9ca45594.css.map",
+    "main.2b03a8ea.css.map": "/static/css/main.2b03a8ea.css.map",
     "main.6ec45726.js.map": "/static/js/main.6ec45726.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ca45594.css",
+    "static/css/main.2b03a8ea.css",
     "static/js/main.6ec45726.js"
   ]
 }
