@@ -84,7 +84,7 @@ app.post("/send_mail",  async (req, res) => {
 
 app.use('*', (req,res) => {
   //res.sendFile(path.join(__dirname, '../../frontend/build', '/index.html'));
-  const index = path.join(__dirname, '../../Memoire360ss/frontend/build', 'index.html');
+  const index = path.join(__dirname, '../../Memoire360/frontend/build', 'index.html');
 res.sendFile(index);
 })
 
