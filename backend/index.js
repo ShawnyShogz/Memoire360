@@ -8,7 +8,7 @@ const cors = require("cors")
 const nodemailer = require("nodemailer")
 
 //Define paths for Express config
-app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use(express.static(path.resolve(__dirname, "../frontend/build")))
 
@@ -27,14 +27,9 @@ app.use(cors({
 
  app.use(cors());
 
-app.use('/*', (req,res) => {
-    //res.sendFile(path.join(__dirname, '../../frontend/build', '/index.html'));
-    const index = path.join(__dirname, '../../360photobooth/frontend/build', 'index.html');
-  res.sendFile(index);
-  })
 
-app.use(bodyParser.urlencoded({ extended: true }))
-app.use(bodyParser.json())
+// app.use(bodyParser.urlencoded({ extended: true }))
+// app.use(bodyParser.json())
 
 
 
@@ -85,6 +80,12 @@ app.post("/send_mail",  async (req, res) => {
     `
 	})
   res.status(200).json(data);
+})
+
+app.use('*', (req,res) => {
+  //res.sendFile(path.join(__dirname, '../../frontend/build', '/index.html'));
+  const index = path.join(__dirname, '../../360photobooth/frontend/build', 'index.html');
+res.sendFile(index);
 })
 
 app.listen(process.env.PORT || 8080, () => {
