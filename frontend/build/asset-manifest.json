@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2b03a8ea.css",
+    "main.js": "/static/js/main.6ec45726.js",
+    "static/media/HauteDolciTestimonial.mp4": "/static/media/HauteDolciTestimonial.a21cb6e234a2d718d1dc.mp4",
+    "static/media/bg.png": "/static/media/bg.3d421b1b5682e1b67deb.png",
+    "static/media/ChipMemoire.mp4": "/static/media/ChipMemoire.c1ed848dd8ace029f988.mp4",
+    "static/media/webOptimizedthreelittlewords.mp4": "/static/media/webOptimizedthreelittlewords.f7a9201c9bbafbeeffcf.mp4",
+    "static/media/KonanMemoire.mp4": "/static/media/KonanMemoire.fac339f2a243f49ca84c.mp4",
+    "static/media/BudinaMemoire.mp4": "/static/media/BudinaMemoire.fe9f174b4aa44eb47f13.mp4",
+    "static/media/IMG_4314.JPG": "/static/media/IMG_4314.f63a091a749d5d0607f3.JPG",
+    "static/media/knife.png": "/static/media/knife.1121c0a5afb62acb31cb.png",
+    "static/media/overlaybg.png": "/static/media/overlaybg.165362eea72d1614ae28.png",
+    "static/media/memoire360.png": "/static/media/memoire360.ec74ffa2651f92e608f9.png",
+    "static/media/slide_3.png": "/static/media/slide_3.dd52a2f460d51b2dc40a.png",
+    "static/media/slide_4.png": "/static/media/slide_4.2111dff6054f06a796b6.png",
+    "static/media/slide_2.png": "/static/media/slide_2.85aa889e383555192325.png",
+    "static/media/slide_1.png": "/static/media/slide_1.53f770a8a76a7ced0d17.png",
+    "static/media/logo.png": "/static/media/logo.0286194c03de0a90dac9.png",
+    "static/media/spoon.svg": "/static/media/spoon.d079f43fbcf509908d3865293080795a.svg",
+    "index.html": "/index.html",
+    "main.2b03a8ea.css.map": "/static/css/main.2b03a8ea.css.map",
+    "main.6ec45726.js.map": "/static/js/main.6ec45726.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b03a8ea.css",
+    "static/js/main.6ec45726.js"
+  ]
+}
