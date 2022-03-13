@@ -31,7 +31,7 @@ const PhotoGallery = () => {
     const loadImages = () => {
       Storage.list("")
         .then((files) => {
-          console.log(files);
+          // console.log(files);
           setFiles(files);
         }).then()
         .catch((err) => {
@@ -48,7 +48,13 @@ const PhotoGallery = () => {
     const handleClick = (file, index) => {
         setCurrentIndex(index);
         {file.key ? setClickedImg(`https://memoire360bucket.s3.eu-west-2.amazonaws.com/public/${file.key}`): setClickedImg(file.key);}
-        setImageOrVideo();      
+        setMedia('media')     
+      };
+
+      const handleVideoClick = (file, index) => {
+        setCurrentIndex(index);
+        {file.key ? setClickedImg(`https://memoire360bucket.s3.eu-west-2.amazonaws.com/public/${file.key}`): setClickedImg(file.key);}
+          setMedia(null)
       };
       
 
@@ -65,6 +71,12 @@ const handelRotationRight = () => {
     if (currentIndex + 1 >= totalLength) {
       setCurrentIndex(0);
       const newUrl = `https://memoire360bucket.s3.eu-west-2.amazonaws.com/public/${files[0].key}`;
+      
+      if(isImage(files[0])){
+        setMedia('media')
+      }else{
+        setMedia(null)
+      }
       setClickedImg(newUrl);
       return;
     }
@@ -72,6 +84,12 @@ const handelRotationRight = () => {
     const newUrl = files.filter((item) => {
       return files.indexOf(item) === newIndex;
     });
+    if(isImage(newUrl[0])){
+      setMedia('media')
+    }else{
+      setMedia(null)
+    }
+    
      const newItem = `https://memoire360bucket.s3.eu-west-2.amazonaws.com/public/${newUrl[0].key}`;
     setClickedImg(newItem);
     setCurrentIndex(newIndex);
@@ -82,6 +100,13 @@ const handelRotationRight = () => {
     if (currentIndex === 0) {
       setCurrentIndex(totalLength - 1);
       const newUrl = `https://memoire360bucket.s3.eu-west-2.amazonaws.com/public/${files[totalLength - 1].key}`;
+
+      if(isImage(files[totalLength - 1])){
+        setMedia('media')
+      }else{
+        setMedia(null)
+      }
+
       setClickedImg(newUrl);
       return;
     }
@@ -89,6 +114,12 @@ const handelRotationRight = () => {
     const newUrl = files.filter((item) => {
       return files.indexOf(item) === newIndex;
     });
+
+    if(isImage(newUrl[0])){
+      setMedia('media')
+    }else{
+      setMedia(null)
+    }
     const newItem = `https://memoire360bucket.s3.eu-west-2.amazonaws.com/public/${newUrl[0].key}`;
     setClickedImg(newItem);
     setCurrentIndex(newIndex);
@@ -115,10 +146,8 @@ const handelRotationRight = () => {
             type="video/mp4"
             loop
             style={{width:'100%'}}
-            controls={true}
-            autoplay={true}
             muted
-            onClick={() => handleClick(file, i)}/>}
+            onClick={() => handleVideoClick(file, i)}/>}
           </div>
         ))}
         <div>

@@ -2,6 +2,9 @@
   height: 100vh;
   position: relative;
   background-color: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
 }
 
 .app__video-smallscreen {

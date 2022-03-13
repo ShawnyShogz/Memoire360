@@ -19,7 +19,7 @@ const ImageModal = ({
       <>
         <div className="overlay dismiss" onClick={handleClick}>
           {/* {clickedImg?   : ''} */}
-          {imgPresent? <img src={clickedImg} alt="bigger pic" /> : <video controls={true} src={clickedImg} alt="bigger1 pic" />}
+          {imgPresent? <img src={clickedImg} alt="bigger pic" /> : <video muted={true} loop controls={true} autoPlay={true} src={clickedImg} alt="bigger1 pic" />}
           <span className="dismiss">
           <GrClose className="close dismiss" onClick={handleClick}/>
           </span>
