@@ -12,6 +12,7 @@
   justify-content: flex-start;
   align-items: center;
   height: 70px;
+  overflow-y: hidden;
 }
 
 .app__navbar-logo img {

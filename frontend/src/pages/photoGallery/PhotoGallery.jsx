@@ -1,9 +1,11 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import Amplify, { Storage } from 'aws-amplify';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Navbar } from '../../components';
 import './PhotoGallery.css';
 import ImageModal from '../../components/ImageModal/ImageModal';
+import images from '../../constants/images';
 
 
 const PhotoGallery = () => {
@@ -57,10 +59,6 @@ const PhotoGallery = () => {
           setMedia(null)
       };
       
-
-    const setImageOrVideo = () => {
-      setMedia('media')
-    }
 
     const isImage = (file) => {
       return file.key.includes("JPG");
@@ -133,12 +131,13 @@ const handelRotationRight = () => {
        <div className="gallery">
         {files.map((file, i) => (
           <div key={i} className="media">
-            {isImage(file) ? <img 
+            {isImage(file) ? <LazyLoadImage 
             src={`https://memoire360bucket.s3.eu-west-2.amazonaws.com/public/${file.key}`}
             loading="lazy"
             alt=""
             style={{width:'100%'}}
             onClick={() => handleClick(file, i)}
+            placeholderSrc={images.memoire360}
             />
             :
             <video

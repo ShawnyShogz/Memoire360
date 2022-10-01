@@ -1,4 +1,6 @@
 import React, { Suspense,lazy } from 'react';
+import ReactGA from 'react-ga';
+import { useEffect } from "react";
 import './App.css';
 import {
   BrowserRouter,
@@ -16,6 +18,15 @@ const Booking = lazy(()=> import('./pages/book/Booking'))
 
 
 function App (){
+
+  const measurementID = process.env.REACT_APP_GOOGLE_ANALYTICS_MEASURMENT_ID;
+  useEffect(() => {
+    // ReactGA.initialize(`${measurementID}`, { debug: true });
+    ReactGA.initialize(`${measurementID}`);
+    // To Report Page View 
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [measurementID])
+
   return ( 
     <BrowserRouter>
     <Suspense fallback={<div>Loading...</div>}>
