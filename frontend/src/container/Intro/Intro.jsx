@@ -9,6 +9,8 @@ const Intro = () => {
   return (
     <div>
     <div className="app__video">
+      <div className="callNow">
+      </div>
       <video
         ref={vidRef}
         className="video-style"
