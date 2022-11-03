@@ -17,8 +17,8 @@ const Footer = () => (
     <div className="app__footer-links_contact">
         <h1 className="app__footer-headtext" id="contact">Contact Us</h1>
         <p className="p__opensans">Nationwide</p>
-        <p className="p__opensans"><a href ="+44 7500622775">+44 7500622775</a></p>
-        <p className="p__opensans"><a href ="+44 7720270993">+44 7720270993</a></p>
+        <p className="p__opensans"><a href ="tel:+447500622775">+44 7500622775</a></p>
+        <p className="p__opensans"><a href ="tel:+447720270993">+44 7720270993</a></p>
         <p className="p__opensans">memoire360@outlook.com</p>
 
         <div className="app__footer-links_icons">
